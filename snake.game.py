@@ -50,7 +50,7 @@ def welcome():
         gameWindow.blit(bgimg2, (0, 0))
         text_screen("Welcome to Snakes", black, 260, 250)
 
-        # text_screen("Press Space Bar To Play", black, 232, 290)
+        text_screen("Press Space Bar To Play", black, 232, 290)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 exit_game = True
@@ -97,7 +97,7 @@ def gameloop():
                 f.write(str(hiscore))
             gameWindow.fill(white)
             gameWindow.blit(bgimg, (0, 0))
-            # text_screen("Game Over! Press Enter To Continue", red, 100, 250)
+            text_screen("Game Over! Press Enter To Continue", red, 100, 250)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
